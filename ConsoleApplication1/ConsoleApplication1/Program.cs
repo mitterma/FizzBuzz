@@ -10,7 +10,26 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            // test test t  huhuu
+            for (int i = 1; i <= 100; i++)
+            {
+                if (((i % 3) == 0) && ((i % 5) == 0)) 
+                {
+                    Console.WriteLine("FIZZBUZZ");
+                }                
+                else if ((i % 3) == 0)
+                {
+                    Console.WriteLine("FIZZ");                    
+                }
+                else if ((i % 5) == 0)
+                {
+                    Console.WriteLine("BUZZ");
+                }    
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadLine();
         }
     }
 }
