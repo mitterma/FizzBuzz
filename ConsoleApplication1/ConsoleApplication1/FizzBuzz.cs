@@ -14,7 +14,7 @@ namespace ConsoleApplication1
             {
                 return "FIZZBUZZ";
             }
-            else if (IsDivisibleByThree(number))
+            else if (IsDivisibleByThree(number) || IsContainsThree(number))
             {
                 return "FIZZ";
             }
@@ -36,6 +36,16 @@ namespace ConsoleApplication1
         public bool IsDivisibleByThree(int number)
         {
             return (number % 3) == 0;
+        }
+
+        public bool IsContainsThree(int number)
+        {
+            if (number.ToString().Contains("3"))
+            {
+                return true;
+            }
+            
+            return false;
         }
     }
 
