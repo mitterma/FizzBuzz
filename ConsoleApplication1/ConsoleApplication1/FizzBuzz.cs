@@ -10,11 +10,11 @@ namespace ConsoleApplication1
     {
         public string FizzBuzzOrNumber(int number)
         {
-            if (IsDivisibleThree(number) && IsDivisibleByFive(number))
+            if (IsDivisibleByThree(number) && IsDivisibleByFive(number))
             {
                 return "FIZZBUZZ";
             }
-            else if (IsDivisibleThree(number))
+            else if (IsDivisibleByThree(number))
             {
                 return "FIZZ";
             }
@@ -33,7 +33,7 @@ namespace ConsoleApplication1
             return (number % 5) == 0;
         }
 
-        public bool IsDivisibleThree(int number)
+        public bool IsDivisibleByThree(int number)
         {
             return (number % 3) == 0;
         }
