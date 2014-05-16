@@ -28,12 +28,12 @@ namespace ConsoleApplication1
             }
         }
         
-        public static bool IsDivisibleByFive(int number)
+        public bool IsDivisibleByFive(int number)
         {
             return (number % 5) == 0;
         }
 
-        public static bool IsDivisibleThree(int number)
+        public bool IsDivisibleThree(int number)
         {
             return (number % 3) == 0;
         }
