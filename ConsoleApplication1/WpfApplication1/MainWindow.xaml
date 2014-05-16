@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="703.906" Width="563.551">
     <Grid Margin="0,0,111,-435">
-        <Button Content="FizzBuzz" HorizontalAlignment="Left" Margin="195,609,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="FizzBuzz" HorizontalAlignment="Left" Margin="195,609,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <ListBox HorizontalAlignment="Left" Height="472" Margin="81,65,0,0" VerticalAlignment="Top" Width="311" RenderTransformOrigin="0.5,0.5">
             <ListBox.RenderTransform>
                 <TransformGroup>
