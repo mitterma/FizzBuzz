@@ -13,15 +13,15 @@ namespace ConsoleApplication1
         {
             for (int i = 1; i <= 100; i++)
             {
-                if (((i % 3) == 0) && ((i % 5) == 0)) 
+                if (IsDivisibleThree(i) && IsDivisibleByFive(i)) 
                 {
                     Console.WriteLine("FIZZBUZZ");
-                }                
-                else if ((i % 3) == 0)
+                }
+                else if (IsDivisibleThree(i))
                 {
                     Console.WriteLine("FIZZ");                    
                 }
-                else if ((i % 5) == 0)
+                else if (IsDivisibleByFive(i))
                 {
                     Console.WriteLine("BUZZ");
                 }    
@@ -31,6 +31,16 @@ namespace ConsoleApplication1
                 }
             }
             Console.ReadLine();
+        }
+
+        private static bool IsDivisibleByFive(int number)
+        {
+            return (number % 5) == 0;
+        }
+
+        public static bool IsDivisibleThree(int number)
+        {
+            return (number % 3) == 0;
         }
     }
 }
