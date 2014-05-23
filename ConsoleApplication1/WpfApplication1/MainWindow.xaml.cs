@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ConsoleApplication1;
 
 
 namespace WpfApplication1
@@ -28,7 +29,12 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-                        
+            FizzBuzz fizzbuzz = new FizzBuzz();
+
+            for (int i = 1; i <= 100; i++)
+            {
+                this.FizzBuzzbox.Items.Add(fizzbuzz.FizzBuzzOrNumber(i));
+            }
         }
     }
 }
