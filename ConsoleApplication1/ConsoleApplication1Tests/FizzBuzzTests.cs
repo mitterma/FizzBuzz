@@ -34,6 +34,8 @@ namespace ConsoleApplication1.Tests
             Assert.AreEqual("FIZZ", fizzbuzz.FizzBuzzOrNumber(73));
 
             Assert.AreEqual("FIZZ", fizzbuzz.FizzBuzzOrNumber(33));
+
+            Assert.AreNotEqual("25", fizzbuzz.FizzBuzzOrNumber(25));
         }
     }
 }
