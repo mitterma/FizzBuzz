@@ -36,5 +36,10 @@ namespace WpfApplication1
                 this.FizzBuzzbox.Items.Add(fizzbuzz.FizzBuzzOrNumber(i));
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.FizzBuzzbox.Items.Clear();
+        }
     }
 }
